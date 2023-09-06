@@ -1,0 +1,50 @@
+{{!--
+Це код container файлу для template-7 сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/template-7"
+--}}
+
+<header class="header">
+	{{> headerDark}}
+</header>
+
+{{#with hero}}
+<div class="hero">
+	<div class="hero_content">
+		<h1 class="hero_title">{{title}}</h1>
+		<p class="hero_description">{{description}}</p>
+		{{#with button}}
+		<button href="{{url}}" type="text" class="hero_button">{{text}}</button>
+		{{/with}}
+	</div>
+</div>
+{{/with}}
+
+{{#with about}}
+<div class="about">
+	<strong class="about_heading">{{heading}}</strong>
+	<p class="about_info">{{info}}</p>
+</div>
+{{/with}}
+
+<div class="articles">
+	<div class="articles_info">
+		<h2 class="articles_title">Our Articles</h2>
+		<button type="text" class="articles_button">View All</button>
+	</div>
+
+	<div class="articles_list">
+		{{> articleCardDark}}
+	</div>
+</div>
+
+<footer class="footer">
+	{{> footerDark}}
+</footer>
+
+{{!--
+Цей код містить лише те, що буде виводитись в
+
+<body> в layout/template-7.hbs
+
+	Адже наш layout/template-7.hbs має вже структуру HTML
+	--}}
