@@ -10,7 +10,7 @@
   --color-black: #000000;
   --color-primary: #611f69;
   --color-light: #f4ede4;
-  --color-grey: #454245;
+  --color-gray: #454245;
   --color-blue: #1264a3;
 
   --page-width-big: 1260px;
@@ -389,7 +389,7 @@ body {
 
   .about_card_text {
     font-size: var(--size-1, 14px);
-    color: var(--color-grey, #454245);
+    color: var(--color-gray, #454245);
   }
 
   .about_card_title {

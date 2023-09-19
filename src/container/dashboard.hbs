@@ -1,0 +1,52 @@
+{{!--
+Це код container файлу для dashboard сторінки,
+в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/dashboard"
+--}}
+
+<div class="page page--dashboard">
+	<aside class="page__aside aside vertical">
+		<div class="aside__logo">Sidebar</div>
+		<nav class="vertical vertical--small">
+			<a href="#" class="nav-button nav-button--active click">
+				<span class="icon nav-button__icon" style="background-image: url('/svg/nav/home.svg');"></span>
+				<span class="text text--light">Home</span>
+			</a>
+			<a href="#" class="nav-button click">
+				<span class="icon nav-button__icon" style="background-image: url('/svg/nav/table.svg');"></span>
+				<span class="text text--light">Orders</span>
+			</a>
+			<a href="#" class="nav-button click">
+				<span class="icon nav-button__icon" style="background-image: url('/svg/nav/grid.svg');"></span>
+				<span class="text text--light">Products</span>
+			</a>
+		</nav>
+	</aside>
+	<header class="header">
+		<div class="layout header__content text--small">
+			<div class="header__search">
+				{{!-- <label class="text" for=""></label> --}}
+				<input type="text" placeholder="Search" class="field field--header">
+				<span class="icon header__icon-search" style="background-image: url('/svg/header/search.svg');"></span>
+				<span class="icon icon--header-settings icon--button icon--color-blue-dark click"
+					style="background-image: url('/svg/header/settings.svg');"></span>
+			</div>
+			<div class="header__item-list">
+				<span class="icon icon--header-settings icon--button icon--color-yellow-light click"
+					style="background-image: url('/svg/header/signal.svg');"></span>
+				<span class="icon icon--header-settings icon--button icon--color-blue-light click"
+					style="background-image: url('/svg/header/translate.svg');"></span>
+				<span class="icon icon--header-settings icon--button icon--color-yellow-light click"
+					style="background-image: url('/svg/header/bell.svg');"></span>
+			</div>
+		</div>
+	</header>
+	<main class="main"></main>
+</div>
+
+{{!--
+Цей код містить лише те, що буде виводитись в
+
+<body> в layout/dashboard.hbs
+
+	Адже наш layout/dashboard.hbs має вже структуру HTML
+	--}}
